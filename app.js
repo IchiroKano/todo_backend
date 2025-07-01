@@ -23,7 +23,7 @@ const USERNAME = process.env.TODO_USER || "Guest";
 const PASSWORD = process.env.TODO_PASSWORD || "NoPass";
 const SECRET_KEY = process.env.TODO_SECRET_KEY || "NoKey";
 
-/* 2. listen()メソッドを実行して3000番ポートで待ち受け。*/
+/* 2. listen()メソッドを実行して3006番ポートで待ち受け。*/
 var server = app.listen(port, function(){
     console.log("Node.js is listening to PORT:" + server.address().port);
 });
