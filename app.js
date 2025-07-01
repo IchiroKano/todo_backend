@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
 // for Datadog
 const tracer = require('dd-trace').init({
   tags: {
-    host: 'ome.funnygeekjp.com',
+    host: process.env.TODO_HOST,
     env: 'prod',
     service: 'todo',
     version: '1.0',
