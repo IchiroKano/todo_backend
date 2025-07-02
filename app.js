@@ -360,8 +360,9 @@ app.get('/print/:name', (req, res) => {
 // **ログインAPI**　htmlかURLオプションから取り出す
 app.post('/login', (req, res) => {
   console.log('ログイン認証チェックします・・・：入力＝', req.body);
-  console.log('サーバー登録値＝%S, %S', USERNAME, PASSWORD);
-  console.log('キー: ', SECRET_KEY);
+  //セキュリティのため非表示にする
+  //console.log('サーバー登録値＝%S, %S', USERNAME, PASSWORD);
+  //console.log('キー: ', SECRET_KEY);
   const { username, password } = req.body;
 
   if (username === USERNAME && password === PASSWORD) {
